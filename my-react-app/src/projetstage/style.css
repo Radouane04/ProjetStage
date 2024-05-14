@@ -1,0 +1,7 @@
+.NAVH{
+  display:flex;
+  text-decoration: none;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  background-color: #3d6647;
+  }

@@ -1,0 +1,12 @@
+export const Banque =
+[{"id":1,"first_name":"Radouane","last_name":"Bouradouan","solde":20000,"email":"epeery0@furl.net","gender":"Male","address":"5 Mallard Plaza","phone":"764-178-9525","credit card":"40413722675830738","work":"Muller, Brown and Streich","password":"aP8jjQ/w"},
+{"id":2,"first_name":"Carolynn","last_name":"Douse","email":"cdouse1@alibaba.com","gender":"Female","address":"1 Myrtle Circle","phone":"821-506-7629","credit card":"404137226758765738","work":"Roob LLC","password":"tO0g9e8"},
+{"id":3,"first_name":"Derward","last_name":"Stebbings","email":"dstebbings2@ning.com","gender":"Male","address":"79 Continental Parkway","phone":"293-552-7881","credit card":"40013722675830738","work":"Balistreri, Schumm and Larkin","password":"sJ9TFA"},
+{"id":4,"first_name":"Becka","last_name":"Collard","email":"bcollard3@freewebs.com","gender":"Female","address":"1 5th Hill","phone":"711-671-0794","credit card":"40413722675830755","work":"Morissette, Dare and Pouros","password":"fM9hg_$!"},
+{"id":5,"first_name":"Emmalynn","last_name":"Humber","email":"ehumber4@feedburner.com","gender":"Female","address":"4 Thompson Lane","phone":"641-371-2335","credit card":"40413712345830738","work":"Hudson and Sons","password":"wP8i!"},
+{"id":6,"first_name":"Devlin","last_name":"Rottgers","email":"drottgers5@livejournal.com","gender":"Male","address":"11 Saint Paul Drive","phone":"452-556-7185","credit card":"40413722675830738","work":"Kilback, Aufderhar and Schamberger","password":"kS9E"},
+{"id":7,"first_name":"Gabby","last_name":"Le Grys","email":"glegrys6@zimbio.com","gender":"Non-binary","address":"634 Northfield Drive","phone":"710-365-8237","credit card":"546789722675830738","work":"Towne Inc","password":"vV8?Pb"},
+{"id":8,"first_name":"Lindi","last_name":"Skally","email":"lskally7@discovery.com","gender":"Female","address":"7022 Sunbrook Center","phone":"839-596-5740","credit card":"4041372260830738","work":"Adams-Morissette","password":"sD4M5E"},
+{"id":9,"first_name":"Stevy","last_name":"Sanchez","email":"ssanchez8@w3.org","gender":"Male","address":"93 Golden Leaf Crossing","phone":"473-129-8747","credit card":"40093564830738","work":"Breitenberg Group","password":"oQ6v\"DT"},
+{"id":10,"first_name":"Celka","last_name":"Harryman","email":"charryman9@upenn.edu","gender":"Female","address":"070 Anderson Plaza","phone":"993-333-0224","credit card":"404134563900738","work":"Kub-King","password":"uR2X4J#"}
+]

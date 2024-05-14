@@ -1,0 +1,8 @@
+.carte-image {
+    transition: transform 0.3s; /* Ajoute une transition pour un effet de lissage */
+  }
+  
+  .carte-image:hover {
+    transform: scale(1.1); /* Agrandit l'image de 10% au survol */
+  }
+  

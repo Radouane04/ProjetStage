@@ -1,0 +1,133 @@
+/* body
+{
+    background-color: #1e1a1a;
+    color: #fff;
+    padding: 20px;
+} */
+.hello--title
+{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+.add
+{
+    background-color:#524747 ;
+}
+.add h4
+{
+    color: #161687;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list--article
+{
+    background-color: #3d6647;
+}
+.list--article .item--count
+{
+    font-style: italic;
+    color: #000000
+}
+.list--article .article--info
+{
+    min-width: 100px;
+    display: inline-block;
+    color: #0d00ff;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+}
+.link1{
+    display:flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+    /* align-items: center; */
+;
+
+}
+
+
+.link1 Link:hover {
+    background-color: #00d435;
+}
+.test {
+    padding-top: 180px;
+    padding-left: 55%;
+}
+
+.button{
+      border: 2px 2px 2px black;
+    background-color: #3d6647;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+   font-weight: bold;
+   
+}
+.button:hover{
+    border: 2px 2px 2px black;
+    background-color:aliceblue ;
+    text-decoration: none;
+    color: rgb(253, 97, 0);
+   font-size: larger;
+   font-weight: bold;
+}
+.link1 a:hover {
+    /* background-color: lightgray;
+    color:#3d6647; */
+    text-decoration: underline ;
+   
+}
+.link1 a{
+    margin-top: 10px;
+text-decoration: none;
+color: rgb(253, 97, 0);
+font-family: "Chiller";
+font-size: xx-large;
+  }
+  .btn-outline-success:hover {
+    background-color: #ffffff;  /* Couleur de fond au survol */
+    color: rgb(253, 97, 0)  /* Couleur du texte au survol */
+  }
+ 
+  .underline-background-size {
+    text-decoration: underline;  /* Souligner le texte */   /* Changer la couleur de fond */
+    font-size: 1.5em;            /* Changer la taille de la police */
+  }
+.test h1{
+font-family: "Chiller";
+font-size: xxx-large;
+text-decoration: underline;
+color: rgb(253, 97, 0)
+}
+.detail{
+    background-color: rgb(253, 97, 0) ;
+    color: white;
+    border-radius: 5px 5px;
+
+}
+.titre{
+color: lightyellow;
+font-family: "Chiller";
+font-size: xx-large;
+}
+.testlogin{
+    display: flex;
+    justify-content:space-around;
+}
+.testlogin p{
+    font-size: xx-large;
+
+}
+.detest{
+    color: beige;
+
+}
+
+
+
+
