@@ -26,7 +26,7 @@ const Home = () => {
         <img src="/img/bpJPG.JPG" alt="Logo" height="80px" width="200px" style={{ marginTop: '10px'}} />
         <Link to="/Actualite" style={linkStyle} >Actualité</Link>
         <Link to="/about" style={linkStyle} >A propos de nous</Link>
-        <Link to="/Client" style={linkStyle} >Login</Link>
+        <Link to="/Client" style={linkStyle} >Espace Client</Link>
         <Link to="/Admin" style={linkStyle} >Admin</Link>
       </div>
       <div style={{ backgroundImage: `url(/img/slogan.JPG)`, height: '400px', width: '100%', backgroundSize: 'cover', backgroundPosition: 'center' }}>

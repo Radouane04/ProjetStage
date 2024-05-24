@@ -1,6 +1,7 @@
+// login.jsx
 import React, { useState } from 'react';
 import { Admines } from './identification';
-
+import { Link } from 'react-router-dom';
 const Login = ({ setIsAdmin }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -12,6 +13,8 @@ const Login = ({ setIsAdmin }) => {
         const isAdmin = Admines.find(a => a.name === username && a.password === password);
         if (isAdmin) {
             setIsAdmin(true);
+            // Store login state in sessionStorage
+            sessionStorage.setItem('isAdmin', 'true');
         } else {
             setAlertErr(true);
         }
@@ -22,16 +25,14 @@ const Login = ({ setIsAdmin }) => {
     
     return (
         <>
-        <h1 className='container' style={{color: 'rgb(253, 97, 0)'}}>Espace Client</h1>
-
+            <h1 className='container' style={{color: 'rgb(253, 97, 0)'}}>Espace Client</h1>
             <div className='w-50 mx-auto s p-3 rounded-3 mt-4'>
                 <div className='testlogin'>
                     <img src='/img/bpJPG.JPG' alt='logo tournoi' style={{ width: '300px', height: '160px' }} />
                 </div>
                 <form onSubmit={connect}>
                     <div className="mb-3 mt-3">
-                    <label htmlFor="username" className="form-label" style={{ color: 'rgb(253, 97, 0)' }}>Identifiant:</label>
-
+                        <label htmlFor="username" className="form-label" style={{ color: 'rgb(253, 97, 0)' }}>Identifiant:</label>
                         <input
                             type="text"
                             className="form-control"
@@ -43,8 +44,7 @@ const Login = ({ setIsAdmin }) => {
                         />
                     </div>
                     <div className="mb-3">
-                    <label htmlFor="password" className="form-label" style={{ color: 'rgb(253, 97, 0)' }}>Password:</label>
-
+                        <label htmlFor="password" className="form-label" style={{ color: 'rgb(253, 97, 0)' }}>Password:</label>
                         <input
                             type="password"
                             className="form-control"
@@ -63,7 +63,10 @@ const Login = ({ setIsAdmin }) => {
                         Submit
                     </button>
                 </form>
-                {alertErr && <div className='mt-3 alert alert-danger text-center'>You Are Not Admin!</div>}
+                {alertErr && <div className='mt-3 alert alert-danger text-center'>Mot de passe ou Identifiant est incorrect!</div>}
+                <div className="mt-3 text-center">
+                    <Link to="/">Retour à la page d'accueil</Link>
+                </div>
             </div>
         </>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navigation = () => {
+const Navigation = ({ logout }) => {
   const buttonStyle = {
     padding: '15px 20px',
     margin: '5px',
@@ -21,35 +21,30 @@ const Navigation = () => {
     marginTop: '70px',
   };
 
-  const rowStyle = {
-    display: 'flex',
-    justifyContent: 'space-around',
-  };
-  const nameS = {
+  const nameStyle = {
     textAlign: 'center',
   };
   
-  const comS = {
+  const comStyle = {
     color: 'hsl(21.25deg 100% 50% / 86%)',
   };
+
   return (
     <div>
-      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px',  }}>
+      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px' }}>
         <img src="/img/bpJPG.JPG" alt="BCP Logo" height="80px" width="200px" style={{ marginRight: 'auto' }} />
-        <button className="btn" style={{ backgroundColor: 'rgb(253, 97, 0)', color: 'white', border: 'none', padding: '10px 20px', cursor: 'pointer' }}>
+        <button className="btn" style={{ backgroundColor: 'rgb(253, 97, 0)', color: 'white', border: 'none', padding: '10px 20px', cursor: 'pointer' }} onClick={logout}>
           <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Se déconnecter</Link>
         </button>
       </nav>
       <h1 className='container' style={{ color: 'rgb(253, 97, 0)', textDecoration: 'underline' }}>Espace Admin</h1>
 
-<h1 style={nameS}>Bonjour M. <span style={comS}> Walid</span></h1>
+      <h1 style={nameStyle}>Bonjour M. <span style={comStyle}> Walid</span></h1>
       <div style={containerStyle}>
-      
-        <div style={rowStyle}>
+        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <button style={buttonStyle}><Link to='/Admin/Ajouter' style={{ color: 'white', textDecoration: 'none' }}> Nouveau Client</Link></button>
-          <button style={buttonStyle}><Link to='/Admin/listArticles' style={{ color: 'white', textDecoration: 'none' }}>Consulter la list des client</Link></button>
-          <button style={buttonStyle}><Link to='/Admin/Historique' style={{ color: 'white', textDecoration: 'none' }}>Historique des operation</Link></button>
-        
+          <button style={buttonStyle}><Link to='/Admin/listArticles' style={{ color: 'white', textDecoration: 'none' }}>Consulter la liste des clients</Link></button>
+          <button style={buttonStyle}><Link to='/Admin/Historique' style={{ color: 'white', textDecoration: 'none' }}>Historique des opérations</Link></button>
         </div>
       </div>
     </div>
